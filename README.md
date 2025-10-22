@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# BlaFlix
 
-## Getting Started
+🧱 1. Project Setup
 
-First, run the development server:
+Ticket	Description
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+✅ Setup frontend project structure	Initialize the project with React (or your preferred framework). Configure folder structure, routing, etc.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+✅ Install styling framework	E.g., Tailwind CSS, styled-components, or plain CSS/SCSS.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+✅ Setup environment variables	For things like API keys or base URLs.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🎨 2. Layout & UI Components
 
-## Learn More
+Ticket	Description
 
-To learn more about Next.js, take a look at the following resources:
+🧩 Create Navbar component	Logo, navigation links, search icon, profile picture.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🧩 Create Footer component	Basic footer with links.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🧩 Create Hero/Banner section	Featured movie/TV show with title, description, and action buttons.
 
-## Deploy on Vercel
+🧩 Create MovieCard component	Used to display individual movie thumbnails in carousels.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🧩 Create MovieRow / Carousel	Horizontally scrollable row of MovieCards, like “Trending Now”, “Top Rated”, etc.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🔒 3. Authentication (Optional if mimicking Netflix UX)
+
+Ticket	Description
+
+🔐 Build Login page	UI for login with email/password.
+
+🔐 Build Sign-up page	UI for new users.
+
+🔐 Setup auth context	Manage login state globally.
+
+🔐 Protect routes	Restrict access to main app if user is not logged in.
+
+🗂 4. Pages and Routing
+
+Ticket	Description
+
+📄 Home page	Show featured content and rows of movies.
+
+📄 TV Shows page	Show only TV shows.
+
+📄 Movies page	Show only movies.
+
+📄 New & Popular page	Show newly added content.
+
+📄 My List page	Show user-saved content.
+
+📄 Movie Details page	When clicking a movie, show details, trailer, description, etc.
+
+🔍 5. Search & Filtering
+
+Ticket	Description
+
+🔍 Implement search bar	Allow users to search titles.
+
+🔍 Display search results page	Show matching movies/shows from query.
+
+📺 6. Video Playback (Optional or Mocked)
+
+Ticket	Description
+
+▶️ Integrate video player component	E.g., react-player, or mock it with a trailer thumbnail.
+
+▶️ Handle play/pause, full screen	UI controls for playback.
+
+💾 7. State Management & API Integration
+
+Ticket	Description
+
+🔄 Connect to API	Use TMDB or mock data. Fetch movies/shows for rows.
+
+🔄 Handle loading & error states	Show spinners or error messages when API fails.
+
+❤️ Implement "My List" feature	Allow users to save movies to a personal list.
+
+🌙 8. Theme & Responsiveness
+
+Ticket	Description
+
+📱 Make responsive layout	Mobile, tablet, and desktop views.
+
+🌓 Optional: Dark mode toggle	Netflix is already dark-themed, but you could toggle themes.
+
+🧪 9. Testing (Optional)
+
+Ticket	Description
+
+✅ Write unit tests for components	E.g., with Jest + React Testing Library.
+
+✅ End-to-end testing	E.g., with Cypress or Playwright.
+
+🚀 10. Deployment
+
+Ticket	Description
+
+🧾 Setup deployment	Deploy to Vercel, Netlify, or GitHub Pages.
+
+📛 Setup custom domain (optional)	Use a custom domain for your Netflix clone.
+
+
