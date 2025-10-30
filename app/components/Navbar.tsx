@@ -1,7 +1,8 @@
 'use client';
 
 import React, {useState, useEffect} from "react";
-import { useRouter } from "next/router"
+import { useRouter } from "next/navigation"
+
 
 //
 
@@ -29,14 +30,16 @@ const Navbar = () => {
     }
 
     return (
-        <nav>
-            <div>Logo</div>
-            <ul>
-                <li>Home</li>
-                <li>Shows</li>
-                <li>Movies</li>
-                <li>New & Popular</li>
+        <nav className="fixed w-full z-50 bg-black">
+            <div className="flex items-center justify-between px-8 py-4">
+            <div className="text-2xl text-red-600">NETFLIX</div>
+            <ul className="flex space-x-6">
+                <li onClick={()=> handleNavClick('/')}>Home</li>
+                <li onClick={()=> handleNavClick('/shows')}>Shows</li>
+                <li onClick={()=> handleNavClick('/movies')}>Movies</li>
+                <li onClick={()=> handleNavClick('/new&popular')}>New & Popular</li>
             </ul>
+            </div>
         </nav>
     )
 
