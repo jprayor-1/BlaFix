@@ -29,6 +29,7 @@ const Navbar = () => {
         router.push(path)
     }
 
+    // lets make the links work
     return (
         <nav className="fixed w-full z-50 bg-black">
             <div className="flex items-center justify-between px-8 py-4">
