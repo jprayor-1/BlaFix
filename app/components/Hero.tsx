@@ -20,13 +20,12 @@ const Hero = () => {
         }
     },[])
     return (
-        <div className="App">
+        <div className="relative h-screen w-full overflow-hidden">
         <video 
             ref={videoRef}
-            width="750" 
-            height="500"
             controls
             muted
+            className="inset-0 w-fill h-full object-cover"
         >
         <source src="/Comecial.mp4" type="video/mp4"/>
         </video>
