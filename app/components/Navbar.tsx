@@ -34,7 +34,7 @@ const Navbar = () => {
     return (
         <nav className="fixed w-full z-50 bg-black/0">
             <div className="flex items-center justify-between px-8 py-4">
-            <div className="text-2xl text-red-600">NETFLIX</div>
+            <div onClick={()=> handleNavClick('/')} className="text-2xl text-red-600">NETFLIX</div>
             <ul className="flex space-x-6">
                 <li onClick={()=> handleNavClick('/')}>Home</li>
                 <li onClick={()=> handleNavClick('/shows')}>Shows</li>

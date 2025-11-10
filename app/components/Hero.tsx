@@ -24,6 +24,7 @@ const Hero = () => {
         <video 
             ref={videoRef}
             controls
+            autoPlay
             muted
             className="inset-0 w-fill h-full object-cover"
         >
